@@ -1,4 +1,4 @@
-name: java build
+name: java build with git hub actions
 
 on:
   push:
