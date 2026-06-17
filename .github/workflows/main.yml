@@ -24,7 +24,7 @@ jobs:
           -DDB_USERNAME=${{secrets.DB_USERNAME}}
           -DDB_URL=${{secrets.DB_URL}}
       - name: Build image
-        run: docker build -t voting-backend:latest .
+        run: docker build -t voting-backend .
       - name: Tag image
         run: docker tag voting-backend bigmnan004/voting-backend:latest
       - name: login
