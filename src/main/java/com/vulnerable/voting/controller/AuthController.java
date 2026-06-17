@@ -99,4 +99,8 @@ public class AuthController {
 
        return new ResponseEntity<>(userService.getAllAspirant(), HttpStatus.OK);
    }
+   @GetMapping("/ping")
+    public ResponseEntity<?> getPing(){
+       return new ResponseEntity<>("pong", HttpStatus.OK);
+   }
 }

@@ -108,7 +108,7 @@ public class UserService {
     }
 
     public AspirantDto getAspirant(String email){
-       return ModelWrapper.mapToAspirantDto(aspirantRepository.findAspirantByUser_EmailAddress(email) ) ;
+       return ModelWrapper.mapToAspirantDto(aspirantRepository.findAspirantByUser_EmailAddress(email)) ;
     }
 
 }
