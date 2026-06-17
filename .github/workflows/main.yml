@@ -30,6 +30,6 @@ jobs:
       - name: login
         run:  docker login -u bigman004 -p ${{secrets.DOCKER_SECRET}}
       - name: push image
-        run:  docker push bigman004/voting-backend:latest
+        run:  docker push bigman004/voting-backend
 
 
