@@ -26,7 +26,7 @@ jobs:
       - name: Build image
         run: docker build -t bigman004/voting-backend:latest .
       - name: Tag image
-        run: docker tag voting-backend:latest voting-backend
+        run: docker tag voting-backend:latest bigmnan004/voting-backend
       - name: login
         run:  docker login -u bigman004 -p ${{secrets.DOCKER_SECRET}}
       - name: push image
