@@ -20,7 +20,7 @@ public class WebConfig implements WebMvcConfigurer {
                 .excludePathPatterns(
                         "/auth/login",
                         "/auth/save_user",
-                        "auth/ping"
+                        "/auth/ping"
                 );
     }
 }
