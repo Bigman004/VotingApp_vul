@@ -84,7 +84,7 @@ public class AuthController {
            cookie.setMaxAge(60*60);
            cookie.setHttpOnly(true);
            cookie.setSecure(true);
-           cookie.setAttribute("SameSite", "Strict");
+           cookie.setAttribute("SameSite", "None");
            cookie.setPath("/");
            httpServletResponse.addCookie(cookie);
            return new ResponseEntity<>(userService.extractAuthority(token), HttpStatus.OK);
