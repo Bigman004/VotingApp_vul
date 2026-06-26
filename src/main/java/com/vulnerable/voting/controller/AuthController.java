@@ -31,7 +31,7 @@ public class AuthController {
     public ResponseEntity<?> saveUser(@RequestPart UserDto userData, @RequestPart(name = "imageFile") MultipartFile imageFile,
                                       @RequestParam(value = "position", defaultValue = "") String position){
        try {
-           if(position.isEmpty()){
+           if(position.isEmpty() || position.equals("null")){
                userService.saveUser(userData, "VOTER");
                saveImage(imageFile, userData.getEmail());
                return new ResponseEntity<>(HttpStatus.CREATED);
